@@ -1,0 +1,35 @@
+package com.lockedMe;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class LockedMe_Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/**
+		 * 
+		 */
+//			Getting FileNames------->
+		
+			List<String> fl = Locked_Me_Operations. retrievel_Listof_File_Names();
+	        fl.forEach(file -> System.out.println(file));
+		
+		
+//		List in Ascending Ordered------.
+		
+		String[]files = new String[]{"Basic_java.txt","Hello.txt","Coding.txt","project.txt"};
+		
+		
+		Arrays.sort(files);
+		for(var f:files) {
+			System.out.println(f);
+		}
+	
+		
+		
+		
+	}
+
+}

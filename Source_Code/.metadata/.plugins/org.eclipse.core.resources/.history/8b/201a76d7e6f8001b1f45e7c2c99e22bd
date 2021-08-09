@@ -1,0 +1,36 @@
+package com.lockedMe;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Locked_Me_Operations 
+
+{   
+//	Mentioning thefoldDirectory------------>
+	static final String FILE_DIRECTORY = "E:\\MyPhase1Project\\File_Directory";
+	
+	
+	public static List<String> retrievel_File_List()
+	{
+		
+		List<String> file_Names = new ArrayList<String>();
+		
+		@SuppressWarnings("unused")
+		File files_Path = new File(FILE_DIRECTORY);
+		
+		
+		
+		
+		return file_Names;
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+}
