@@ -93,8 +93,7 @@ public class Locked_Me_Operations
 	
 	
 	
-	public static boolean delete_File() 
-	{
+	public static boolean delete_File() {
 //		 Getting File Name  user-specified  ------->
 		Scanner sc = new Scanner (System.in);
 		
@@ -111,8 +110,7 @@ public class Locked_Me_Operations
 	    {
 	    	return true;
 	    }
-	    else 
-	    {
+	    else {
 	    	return false;
 	    }
 		
@@ -122,24 +120,5 @@ public class Locked_Me_Operations
 	}
 	
 	
-	public static boolean search_File() {
-//		searching  a user-specified file ------>
-
-			Scanner sc = new Scanner (System.in);
-			
-			System.out.println("Enter the name of file which you want to Search:");
-			String file_Name_tobe_Search = sc.nextLine();
-
-		    
-		    File search_file_name = new File(FILE_DIRECTORY +"//"+file_Name_tobe_Search);
-		    
-		    if((search_file_name.exists())) 
-		    {
-		    	return true;
-		    }
-		    else 
-		    {
-		    	return false;
-		    }
-	}
+	
 }

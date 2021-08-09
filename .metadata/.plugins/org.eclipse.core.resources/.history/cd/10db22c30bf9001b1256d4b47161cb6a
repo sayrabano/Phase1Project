@@ -129,17 +129,10 @@ public class Locked_Me_Operations
 			
 			System.out.println("Enter the name of file which you want to Search:");
 			String file_Name_tobe_Search = sc.nextLine();
-
+//		    sc.close();
 		    
-		    File search_file_name = new File(FILE_DIRECTORY +"//"+file_Name_tobe_Search);
+		    File file_name = new File(FILE_DIRECTORY +"//"+file_Name_tobe_Search);
 		    
-		    if((search_file_name.exists())) 
-		    {
-		    	return true;
-		    }
-		    else 
-		    {
-		    	return false;
-		    }
+		
 	}
 }

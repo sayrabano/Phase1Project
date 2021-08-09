@@ -40,7 +40,7 @@ public class Locked_Me_Operations
 		//Adding file provided by user ------->
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Name of the File which you wnat to add:");
+		System.out.println("Enter the Name of the File as  you wish:");
 		String adding_new_File = sc.nextLine();
 		
 //		 Getting the Countof_Lines to input in the file to the User -------->
@@ -93,53 +93,25 @@ public class Locked_Me_Operations
 	
 	
 	
-	public static boolean delete_File() 
-	{
+	public static boolean delete_File() {
 //		 Getting File Name  user-specified  ------->
 		Scanner sc = new Scanner (System.in);
 		
 		System.out.println("Enter the name of file which you want to delete:");
 		String file_Name = sc.nextLine();
-//	    sc.close();
+	    sc.close();
 	    
-	    File file_name = new File(FILE_DIRECTORY +"//"+ file_Name);
+	    File file_Deleted = new File(FILE_DIRECTORY );
 	    
 		
 		
 //	    Delete user specified file ------>
-	    if(file_name.delete()) 
-	    {
-	    	return true;
-	    }
-	    else 
-	    {
-	    	return false;
-	    }
 		
 		
-		
+		return true;
 		
 	}
 	
 	
-	public static boolean search_File() {
-//		searching  a user-specified file ------>
-
-			Scanner sc = new Scanner (System.in);
-			
-			System.out.println("Enter the name of file which you want to Search:");
-			String file_Name_tobe_Search = sc.nextLine();
-
-		    
-		    File search_file_name = new File(FILE_DIRECTORY +"//"+file_Name_tobe_Search);
-		    
-		    if((search_file_name.exists())) 
-		    {
-		    	return true;
-		    }
-		    else 
-		    {
-		    	return false;
-		    }
-	}
+	
 }
