@@ -1,0 +1,111 @@
+package com.lockedMe;
+
+public class LockedMe_Application 
+{
+
+	
+	public static void main(String[] args) 
+	{
+		
+		final String Welcome_Message = "<-------------------- Welcome to LockedMe.Com ----------------------->" +
+				"\n<-------------------- Developed by: SAYRA BANO ------------------->";
+		
+		System.out.println(Welcome_Message);
+		
+		LockedMe_Application operations = new LockedMe_Application();
+		
+		
+//		Main Menu Options ------>
+		
+		//Primary Option for user
+		private static final String Primary_Option =
+	            "\nSelect option from following: \n"+
+	                    "Choose 1 => To Show files name in directory in ascending order\n"+
+	                    "Choose 2 => To Add, Delete or Search file\n"+
+	                    "Choose 3 => To Exit Program";
+
+		//Secondary Option for user
+	    private static final String Secondary_Option =
+	            "   \nSelect option from following: \n"+
+	                    "Choose 1 => To Add a file\n"+
+	                    "Choose 2 => To Delete a file\n"+
+	                    "Choose 3 => To Search a file\n"+
+	                    "Choose 4 => To GoBack";
+	    
+	    //Primary Option UserInput and Operations
+	    void PrimaryOption() {
+	    	System.out.println(Primary_Option);
+	    	System.out.print("Please enter your option: ");
+	    	@SuppressWarnings("resource")
+			Scanner sc = new Scanner(System.in);
+	    	int PriInput = sc.nextInt();
+	    	switch(PriInput) {
+	    	case 1:
+	    		ListFile();
+	    		PrimaryOption();    		
+	    		break;
+	    		
+	    	case 2:
+	    		SecondaryOption();
+	    		break;
+	    		
+	    	case 3:
+	    		System.out.println("Exiting Application..." + "\nThank You!");
+	    		System.exit(0);
+	    		 break;
+	    		 
+	    	default:
+	    		System.out.println("Please select option 1, 2 or 3");
+	    		PrimaryOption();
+	    	}
+	    	
+	    }
+	    
+	    //Secondary Option UserInput and Operation
+	    void SecondaryOption() {
+	    	System.out.println(Secondary_Option);
+	    	System.out.print("Please enter your option: ");
+	    	try {
+	    	@SuppressWarnings("resource")
+			Scanner sc = new Scanner(System.in);
+	    	int SecInput = sc.nextInt();
+	    	switch(SecInput) {
+	    	case 1:
+	    		System.out.print("Please enter file name to add: ");
+	    		String filename = sc.next();
+	    		AddFile(filename);
+	    		break;
+	    		
+	    	case 2:
+	    		System.out.print("Please enter file name to delete: ");
+	    	    filename = sc.next();
+	    	    DeleteFile(filename);
+	    		break;
+	    		
+	    	case 3:
+	    		System.out.print("Please enter file name to search: ");
+	    		filename = sc.next();
+	    		SearchFile(filename);
+	    		break;
+	    		
+	    	case 4:
+	    		System.out.println("\nBack to main Options");
+	    		PrimaryOption();
+	    		break;
+	    		
+	    	default:
+	    		System.out.println("Please enter 1, 2, 3 or 4");
+	    		SecondaryOption();
+	    	}
+	    	
+	    	SecondaryOption();
+	    	}
+	    	
+	    	catch(IOException e) {
+	    		System.out.println("Please select option 1, 2 or 3");
+	    		PrimaryOption();
+	    	}
+	    
+
+    }
+}

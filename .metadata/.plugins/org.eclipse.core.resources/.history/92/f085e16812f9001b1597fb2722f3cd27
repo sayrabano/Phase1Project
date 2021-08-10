@@ -1,0 +1,33 @@
+package com.lockedMe;
+
+public class LockedMe_Application 
+{
+
+	
+	public static void main(String[] args) 
+	{
+		
+		final String Welcome_Message = "<-------------------- Welcome to LockedMe.Com ----------------------->" +
+				"\n<-------------------- Developed by: SAYRA BANO ------------------->";
+		
+		System.out.println(Welcome_Message);
+		
+		LockedMe_Application operations = new LockedMe_Application();
+		
+		
+//		Main Menu Options ------>
+		
+		System.out.println("\n##########################################");
+		System.out.println("\t\tMain Menu Bar");
+		System.out.println("##########################################");
+		
+		//Primary Option for user
+		final String Primary_Option =
+	            "\nSelect option from following: \n"+
+	                    "Choose 1 => To Show files name in directory in ascending order\n"+
+	                    "Choose 2 => To Add, Delete or Search file\n"+
+	                    "Choose 3 => To Exit Program";
+
+
+    }
+}

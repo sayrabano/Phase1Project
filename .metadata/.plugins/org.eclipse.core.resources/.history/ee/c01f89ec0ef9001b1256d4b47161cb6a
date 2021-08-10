@@ -1,0 +1,13 @@
+package com.lockedMe;
+
+public class LockedMe_Application 
+{
+
+	
+	public static void main(String[] args) 
+	{
+		final String Welcome_Message = "-------------------- Welcome to LockedMe.Com -----------------------" +
+				"\n-------------------- Developed by: SAYRA BANO -------------------";
+
+    }
+}
