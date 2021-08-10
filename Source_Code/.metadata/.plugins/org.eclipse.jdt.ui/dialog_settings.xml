@@ -25,4 +25,18 @@
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="E:\MyPhase1Project\Source_Code"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="LockedMe_Application - phase1_Project"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="E:\MyPhase1Project\Project_JarFile.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="E:\MyPhase1Project\Project_JarFile.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="E:\MyPhase1Project\Source_Code.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
 </section>

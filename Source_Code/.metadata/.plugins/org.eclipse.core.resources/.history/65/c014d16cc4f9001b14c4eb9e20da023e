@@ -1,0 +1,75 @@
+package com.lockedMe;
+
+import java.util.List;
+
+public class LockedMe_Application 
+{
+
+	
+	public static void main(String[] args) 
+	{
+		
+		@SuppressWarnings("unused")
+		final String Welcome_Message = "<-------------------- Welcome to LockedMe.Com ----------------------->" +
+				"\n<-------------------- Developed by: SAYRA BANO ------------------->";
+		
+		
+
+		
+	
+	}	
+	public static void retrievel_Listof_File_Names() {
+		
+
+//		Getting FileNames in Ascending Ordered------->
+		
+		List<String> fl = Locked_Me_Operations. retrievel_Listof_File_Names();
+		System.out.println("// Here is the full list of files //");
+        fl.forEach(file -> System.out.println("-> "+file));
+		
+	}
+	
+	public static void add_File() {
+
+       boolean isCreated = Locked_Me_Operations .add_File();
+		
+		  if (isCreated) {
+            System.out.println("File create Successfully!");
+        } else {
+            System.out.println("File not Created try Again!");
+        }
+		
+	}
+	public static void delete_File() {
+         boolean isDelete = Locked_Me_Operations.delete_File();
+		
+		if (isDelete) 
+		{ 
+		      System.out.println("Deleted the file:" );
+		    } 
+		else
+		    {
+		      System.out.println("Failed to delete the file.");
+		      
+		    }
+	}
+	public static void search_File() {
+            boolean isFound = Locked_Me_Operations .search_File();
+		
+		
+		if (isFound) 
+		{ 
+		      System.out.println("File is found:" );
+		    } 
+		else
+		    {
+		      System.out.println("File not found");
+	
+		
+		    }
+		
+	}
+
+		
+	
+}  
