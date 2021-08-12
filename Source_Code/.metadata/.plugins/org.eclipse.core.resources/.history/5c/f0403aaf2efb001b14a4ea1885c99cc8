@@ -20,13 +20,11 @@ public class Locked_Me_Operations
 	{   
 	
 		
-//		Declaring a List for getting file Names-------------->
+//		Declaring a List for Storing file Names-------------->
 		List<String> file_Names = new ArrayList<String>();
 		
 //		Creating file Object ------>
 		File file_Path = new File(FILE_DIRECTORY);
-		
-		
 		
 //		Getting file_Names and Putting into a List_Form ----------->
 		
@@ -45,7 +43,7 @@ public class Locked_Me_Operations
 		//Adding file provided by user ------->
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Name of the File Name which you want to add:");
+		System.out.println("Enter the Name of the File which you want to add:");
 		String adding_new_File = sc.nextLine();
 		
 //		 Getting the Countof_Lines to input in the file to the User -------->
@@ -70,19 +68,14 @@ public class Locked_Me_Operations
 			    file_Write.write(dataIntoFile);
 			}	
 			
-			
-			return true;
-			
+			return true;		
 		}
-		
 		
 		catch(IOException e)
 		
 		{e.printStackTrace();
 			return false;
 		}
-		
-		
 //		Finally Block to execute the Statement ----->
 		finally {
 			try {
@@ -161,9 +154,5 @@ public class Locked_Me_Operations
 		    {
 		    	return false;
 		    }
-	
-    }
-    
+	}
 }
-
-

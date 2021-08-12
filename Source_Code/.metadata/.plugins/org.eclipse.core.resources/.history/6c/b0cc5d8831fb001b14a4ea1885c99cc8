@@ -26,8 +26,6 @@ public class Locked_Me_Operations
 //		Creating file Object ------>
 		File file_Path = new File(FILE_DIRECTORY);
 		
-		
-		
 //		Getting file_Names and Putting into a List_Form ----------->
 		
 		for(var file:file_Path.list())
@@ -45,7 +43,7 @@ public class Locked_Me_Operations
 		//Adding file provided by user ------->
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Name of the File Name which you want to add:");
+		System.out.println("Enter the Name of the File which you want to add:");
 		String adding_new_File = sc.nextLine();
 		
 //		 Getting the Countof_Lines to input in the file to the User -------->
@@ -70,19 +68,20 @@ public class Locked_Me_Operations
 			    file_Write.write(dataIntoFile);
 			}	
 			
-			
-			return true;
-			
+			return true;		
 		}
-		
 		
 		catch(IOException e)
 		
 		{e.printStackTrace();
 			return false;
 		}
-		
-		
+		catch(NumberFormatException nfex) {
+			System.out.println("Please Enter  Character only!");
+			System.out.println("Numeric value not allowed in the file!");
+			return true;
+			
+		}
 //		Finally Block to execute the Statement ----->
 		finally {
 			try {

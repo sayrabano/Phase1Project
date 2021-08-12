@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class Locked_Me_Operations
 //		Creating file Object ------>
 		File file_Path = new File(FILE_DIRECTORY);
 		
-		
+		.sort(file_Names);
 		
 //		Getting file_Names and Putting into a List_Form ----------->
 		

@@ -1,7 +1,5 @@
 package com.lockedMe;
 
-
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -56,7 +54,7 @@ public class LockedMe_Application
 		
 		}
 		catch(NumberFormatException nfex) {
-			System.out.println("Only Numeric Values are valid to Enter into Logic :");
+			System.out.println("Only Numeric Vlaues Are valid to Enter into Logic :");
 			System.out.println("\t\tPlease Check or Try again!");
 			
 		}
@@ -83,17 +81,8 @@ public class LockedMe_Application
 //		Calling the display_all_files Method to get FileNames in Ascending Ordered------->
 		
 		List<String> fl = Locked_Me_Operations. retrievel_Listof_File_Names();
-		
-		System.out.println("\nList of Files Before Sorting:");
 		System.out.println("// Here is the full List of Files //");
         fl.forEach(file -> System.out.println("-> "+file));
-        
-//        Sorting File_Names using Collections Class ------>
-        Collections.sort(fl);
-		System.out.println("\nList of Files After Sorting:");
-		System.out.println("// Here is the full List of Files //");
-        fl.forEach(file -> System.out.println("-> "+file));
-        
 		
 	}
 	
@@ -122,7 +111,7 @@ public class LockedMe_Application
 		    } 
 		else
 		    {
-		      System.out.println("Failed to delete the file! Try Again.");
+		      System.out.println("Failed to delete the file.");
 		      
 		    }
 	}
@@ -148,7 +137,7 @@ public class LockedMe_Application
 	public static void exitApplication() 
 	{
 		System.out.println("Thank You ! Application Is going closing.");
-		System.out.println("\n\n\nPlease Contact @sayra123 for Further Application Building.");
+		System.out.println("Please Contact @sayra123 for Further Application Building.");
 		System.exit(0);
 	}	
 	

@@ -56,7 +56,7 @@ public class LockedMe_Application
 		
 		}
 		catch(NumberFormatException nfex) {
-			System.out.println("Only Numeric Values are valid to Enter into Logic :");
+			System.out.println("Only Numeric Vlaues Are valid to Enter into Logic :");
 			System.out.println("\t\tPlease Check or Try again!");
 			
 		}
@@ -88,7 +88,6 @@ public class LockedMe_Application
 		System.out.println("// Here is the full List of Files //");
         fl.forEach(file -> System.out.println("-> "+file));
         
-//        Sorting File_Names using Collections Class ------>
         Collections.sort(fl);
 		System.out.println("\nList of Files After Sorting:");
 		System.out.println("// Here is the full List of Files //");
