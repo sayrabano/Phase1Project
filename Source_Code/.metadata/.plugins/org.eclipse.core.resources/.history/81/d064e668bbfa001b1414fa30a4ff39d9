@@ -70,7 +70,7 @@ public class LockedMe_Application
 	public static void displays_all_Files() {
 		
 
-//		Calling the display_all_files Method to get FileNames in Ascending Ordered------->
+//		Calling the display_all_files method to get FileNames in Ascending Ordered------->
 		
 		List<String> fl = Locked_Me_Operations. retrievel_Listof_File_Names();
 		System.out.println("// Here is the full List of Files //");
@@ -83,7 +83,6 @@ public class LockedMe_Application
 	{
 
        boolean isCreated = Locked_Me_Operations .add_File();
-//        Calling Add File Method to addFile ---->
 		
 		  if (isCreated) {
             System.out.println("File create Successfully!");
@@ -93,7 +92,7 @@ public class LockedMe_Application
 		
 	}
 	public static void delete_File() 
-//	     Calling the Delete File Method  to delete file from the Folder ----->
+//	  Calling the Delete File Method ----->
 	{
          boolean isDelete = Locked_Me_Operations.delete_File();
 		
@@ -109,9 +108,8 @@ public class LockedMe_Application
 	}
 	public static void search_File() {
             boolean isFound = Locked_Me_Operations .search_File();
-//            Calling the Search File Method to search user-specified File to the Folder ----->
 		
-//		IfElse Condition ----->
+		
 		if (isFound) 
 		{ 
 		      System.out.println("File is found:" );

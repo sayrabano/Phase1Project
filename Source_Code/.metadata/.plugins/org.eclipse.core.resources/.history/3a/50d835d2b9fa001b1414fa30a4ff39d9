@@ -10,16 +10,13 @@ public class LockedMe_Application
 	
 	public static void main(String[] args) 
 	
-	{  
-//	    Welcome Statement ----->
-		
+	{
 		final String Welcome_Message = "<-------------------- Welcome to LockedMe.Com ----------------------->" +
 				"\n<-------------------- Developed by: SAYRA BANO ------------------->";
 		System.out.println(Welcome_Message);
 		
 		int cont = 1;
-		
-//         do-while loop to Enter Back into Main Menu Option to ------>
+
 		do {
 //		Variable Declaration -------->
 		Scanner obj = new Scanner (System.in);
@@ -32,7 +29,7 @@ public class LockedMe_Application
 		System.out.println("Enter Your Choice:");
 		choice = Integer.parseInt(obj.nextLine());
 		
-//		Using the switch-case to enter the logic of Menu_Option ------->
+//		Using the switch-case to enter Menu_Option ------->
 		switch(choice) 
 		{
 		case 1: displays_all_Files();
@@ -54,7 +51,6 @@ public class LockedMe_Application
 	
 	}
 	public static void display_Menu() {
-//	   Calling the Display Menu Method ------>
 		
 		System.out.println("\n..................................................");
 		System.out.println("\t\tCompany Lockers Pvt.Ltd.");
@@ -70,7 +66,7 @@ public class LockedMe_Application
 	public static void displays_all_Files() {
 		
 
-//		Calling the display_all_files Method to get FileNames in Ascending Ordered------->
+//		Calling the display_all_files method to get FileNames in Ascending Ordered------->
 		
 		List<String> fl = Locked_Me_Operations. retrievel_Listof_File_Names();
 		System.out.println("// Here is the full List of Files //");
@@ -78,12 +74,9 @@ public class LockedMe_Application
 		
 	}
 	
-	public static void add_File() 
-	
-	{
+	public static void add_File() {
 
        boolean isCreated = Locked_Me_Operations .add_File();
-//        Calling Add File Method to addFile ---->
 		
 		  if (isCreated) {
             System.out.println("File create Successfully!");
@@ -92,9 +85,7 @@ public class LockedMe_Application
         }
 		
 	}
-	public static void delete_File() 
-//	     Calling the Delete File Method  to delete file from the Folder ----->
-	{
+	public static void delete_File() {
          boolean isDelete = Locked_Me_Operations.delete_File();
 		
 		if (isDelete) 
@@ -109,9 +100,8 @@ public class LockedMe_Application
 	}
 	public static void search_File() {
             boolean isFound = Locked_Me_Operations .search_File();
-//            Calling the Search File Method to search user-specified File to the Folder ----->
 		
-//		IfElse Condition ----->
+		
 		if (isFound) 
 		{ 
 		      System.out.println("File is found:" );

@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class Locked_Me_Operations 
 
-//    Folder_Path --->
 {   static final String FILE_DIRECTORY  = "E:\\MyPhase1Project\\File_Directory";
 
 	public static List<String> retrievel_Listof_File_Names( )
@@ -76,7 +75,6 @@ public class Locked_Me_Operations
 		{e.printStackTrace();
 			return false;
 		}
-//		Finally Block to execute the Statement ----->
 		finally {
 			try {
 				if(file_Write!=null)
